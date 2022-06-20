@@ -4,7 +4,7 @@ This line is ignored
 element selector:
     - you can select entire elements without any special characters.
     - this applies to all of the elements with that tag on that page.
-    - it ranks on the bottom of the specificity scale. https://www.w3schools.com/css/css_specificity.asp
+    - it ranks on the bottom of the specificity scale. 
 
 class selector:
     - used to select elements with a certain class name.
@@ -17,16 +17,82 @@ id selector:
     - Unlike classes, it can only be used on one element at a time, and is selected with
     the pound (#) symbol. However, it is possible to use more than once.
 
+specificity: link: https://www.w3schools.com/css/css_specificity.asp
+important thing to note: tag < class <  id < inline
+
+uses of classes and ids: 
+    - classes are used for multiple times.
+    - id is supposed to be for one thing.
+
+pseudoselectors:
+    - format: tag/class/id:pseudoselector
+    types:
+        - hover
+        - anchor tag
+
+advance selectors:
+    - adjacent sibling selector:
+        tag + following tag.
+    - general sibling selector:
+        tag that follows one another except they should have the same parent.
+    - child selector:
+        every child of the parent
+        
+
+attribute selectors:
 */
 
-.header1_title{
+h2{
     color: red;
 }
 
-.header2_title{
+.subtitle:hover{
     color: blue;
 }
 
-#contact-us-header{
+#services{
+    color: green;
+}
+
+li:first-child {
+    color: aquamarine;
+}
+
+li:nth-child(2) {
+    color: steelblue;
+}
+
+li:last-child {
+    color: wheat;
+}
+
+li:only-child {
+    color: red;
+}
+
+/* #google-link:link{
+    color: blue;
+}
+
+#google-link:visited{
+    color: aqua;
+} */
+
+/* any tag that follows the previous tag. */
+h1 + a {
+    color:red;
+}
+
+/* every button that precedes a textarea but are in the same parent */
+textarea + button{
+    color: purple;
+}
+
+/* sample of child selector */
+ul > li {
+    color: white;
+}
+
+ul li{
     color: green;
 }
