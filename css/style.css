@@ -1,0 +1,32 @@
+/*
+This line is ignored 
+
+element selector:
+    - you can select entire elements without any special characters.
+    - this applies to all of the elements with that tag on that page.
+    - it ranks on the bottom of the specificity scale. https://www.w3schools.com/css/css_specificity.asp
+
+class selector:
+    - used to select elements with a certain class name.
+    - can be used on any and all elements with that class.
+    - can be used multiple times, and is select with the period (.) symbol.
+
+id selector:
+    - used to select elements with a certain ID name.
+    - can be used on any and all elements with that ID
+    - Unlike classes, it can only be used on one element at a time, and is selected with
+    the pound (#) symbol. However, it is possible to use more than once.
+
+*/
+
+.header1_title{
+    color: red;
+}
+
+.header2_title{
+    color: blue;
+}
+
+#contact-us-header{
+    color: green;
+}
