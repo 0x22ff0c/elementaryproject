@@ -40,7 +40,32 @@ advance selectors:
         
 
 attribute selectors:
+select every source that starts with this piece of information. for ^
+select every source that ends with this value. for $
+select every source that contains this piece of infmration. for *
+select elements with a class attribute value containing the word "article-subtitle". for ~
+Select elements with a class atrribute value equal to "article2 " or "article-". for |
 
+
+/*properties 
+contain within the selectors
+example:
+h2:hover{
+    color: red; - this is a property.
+}
+colon (:) is important.
+
+css General rule.
+- selector : identifying what specific element you are targeting in the html.
+- css block : all the styles are defined within this. the block starts from the beginning curly braces to end curly braces
+- property : located inside of the block. 
+- value: it is dependent on the property.
+format: 
+selector {
+    property: value;
+    property2: value2;
+}
+*/
 */
 
 h2{
@@ -98,7 +123,7 @@ h2[class~=article-subtitle]{
     background: green;
 }
 
-/*Selected all elements with a class atrribute value equal to "article-subtitle2" or "article subtitle2"*/
+/*Selected all elements with a class atrribute value equal to "article2 " or "article-"*/
 h2[class |= article2]{
     background: blue;
 }

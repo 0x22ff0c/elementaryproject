@@ -1,0 +1,50 @@
+ /*
+ colors
+ - hex code: 0-9 and A-F.
+ eg. #a8f5e0
+ a8 - amount of red
+ f5 - amount of green
+ e0 - amount of blue
+ range from 00 (lowest) to ff (highest)
+ eg. solid blue: #0000ff
+ 00 - amount of red which is 0.
+ 00 - amount of green which is 0.
+ ff - amount of all blue.
+ eg. solid white: #ffffff
+ ff - all red
+ ff - all green
+ ff - all blue
+ eg. solid black: #000000
+ 00 - 0 red
+ 00 - 0 green
+ 00 - 0 blue
+
+ - rgb: 0 (minimum) - 255 (maximum)
+ eg. rgb(168, 245, 224)
+ 168 - amount of red
+ 245 - amount of green
+ 224 - amount of blue
+
+eg. solid blue: rgb(0, 0, 255)
+0 - amount of red
+0 - amount of green
+255 - amount of blue
+
+eg. solid white: rgb(0, 0, 0)
+0 - amount of red
+0 - amount of green
+0 - amount of blue
+
+eg. solid black: rgb (255, 255, 255)
+255 - amount of red
+255 - amount of green
+255 - amount of blue
+ */
+
+#title{
+    color: rgb(23, 153, 58);
+}
+
+.subtitle{
+    color: rgb(47, 216, 92);
+}
