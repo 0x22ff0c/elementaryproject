@@ -40,10 +40,11 @@ advance selectors:
         
 
 attribute selectors:
+
 */
 
 h2{
-    color: red;
+    color: black;
 }
 
 .subtitle:hover{
@@ -60,7 +61,7 @@ li:first-child {
 
 li:nth-child(2) {
     color: steelblue;
-}
+} */
 
 li:last-child {
     color: wheat;
@@ -70,29 +71,34 @@ li:only-child {
     color: red;
 }
 
-/* #google-link:link{
+#google-link:link{
     color: blue;
 }
 
 #google-link:visited{
     color: aqua;
-} */
+}
 
 /* any tag that follows the previous tag. */
 h1 + a {
     color:red;
 }
 
-/* every button that precedes a textarea but are in the same parent */
-textarea + button{
-    color: purple;
+/* advance selectors 
+select every source that starts with this piece of information. for ^
+select every source that ends with this value. for $
+select every source that contains this piece of infmration. for *
+*/
+img[src*="../images/"]{
+    border: 5px solid black;
 }
 
-/* sample of child selector */
-ul > li {
-    color: white;
+/*selects all elements with a class attribute value containing the word "article-subtitle"*/
+h2[class~=article-subtitle]{
+    background: green;
 }
 
-ul li{
-    color: green;
+/*Selected all elements with a class atrribute value equal to "article-subtitle2" or "article subtitle2"*/
+h2[class |= article2]{
+    background: blue;
 }
