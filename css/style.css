@@ -56,11 +56,21 @@ to resize an image, you need to do the following:
 or cut a little bit off one of the edges.
 - contain tells the browser to always show the whole image even if that leaces a little space to the sides or bottom.
  
+to increase or decrease the color's opacity, you could use:
+rgba - wherein the 4th parameter ranges from 0 - 1, 0 - lighter 1 - original color
+this value will change the color indicated in the first 3 parameters.
+a - alpha (opacity or transparency)
+Note: you can also use percentage here from 0% to 100%.
+
 */
  
  body{
-     background: rgb(45, 120, 234, 1);
+     background: rgba(45, 120, 234, 0.6);
  }
+
+/* body{
+    background:rgb(5, 63, 198);
+} */
 
 #title{
     color: rgb(23, 153, 58);
