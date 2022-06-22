@@ -65,7 +65,7 @@ Note: you can also use percentage here from 0% to 100%.
 */
  
  body{
-     background: rgba(45, 120, 234, 0.6);
+     background: linear-gradient(-140deg, rgb(45, 120, 234), rgba(45, 120, 234, 0.6));
  }
 
 /* body{
@@ -83,9 +83,26 @@ Note: you can also use percentage here from 0% to 100%.
 #service-image{
 
     height: 400px; 
-    width: 100%;
+    width: 70%;
+    border: solid;
 
-    background: url("https://images.unsplash.com/photo-1495312040802-a929cd14a6ab?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1932&q=80");
+    /* background: url("https://images.unsplash.com/photo-1495312040802-a929cd14a6ab?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1932&q=80");
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: contain; */
+
+    /* background: linear-gradient(to right, rgb(0,255,0), rgba(0,0,255, 0.5)); */
+    /* background: linear-gradient(to bottom right, rgb(0,255,0), rgba(0,0,255, 0.5)); */
+    /* background: linear-gradient(-160deg, rgb(0,255,0), rgba(0,0,255, 0.5)); */
+    /* background: radial-gradient(red, rgba(0,0,255, 20%), rgba(0,255,0, 30%)); */
+    /* background:  radial-gradient(red 20%, blue 40%, green 70%); */
+    background:  radial-gradient(circle,red 20%, blue 40%, green 70%);
+    background-size: cover
+
+    /* 
+    radial - circular
+        - for the shape, you can use two values (ellipse (default), circle)
+    linear - straight line
+        - when there is no direction mentioned, the default direction is from top to bottom.
+    */
+
 } 
