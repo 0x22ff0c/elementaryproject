@@ -39,7 +39,19 @@ eg. solid black: rgb (255, 255, 255)
 255 - amount of red
 255 - amount of green
 255 - amount of blue
+
+to use background image use this property:
+background
+- this can accept values from web url, local url, and color.
+- when you use background-color, it will only accept color. 
+If you try to use a url, it will NOT work, so better if you just use background property.
+
+
  */
+ 
+ body{
+     background: rgba(45, 120, 234, 1);
+ }
 
 #title{
     color: rgb(23, 153, 58);
@@ -48,3 +60,13 @@ eg. solid black: rgb (255, 255, 255)
 .subtitle{
     color: rgb(47, 216, 92);
 }
+
+#service-image{
+
+    height: 400px; 
+    width: 100%;
+
+    background: url("https://images.unsplash.com/photo-1495312040802-a929cd14a6ab?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1932&q=80");
+    background-repeat: no-repeat;
+    background-size: contain;
+} 
