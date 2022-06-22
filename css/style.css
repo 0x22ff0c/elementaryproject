@@ -46,11 +46,20 @@ background
 - when you use background-color, it will only accept color. 
 If you try to use a url, it will NOT work, so better if you just use background property.
 
-
- */
+to resize an image, you need to do the following:
+1. to test it out, you need to contain the image in a div tag.
+2. you need to specify its id to make it more specific.
+3. you need to declare the element's height and width.
+4. background-repeat - this means if the image that will placed in this element will repeat or not.
+5. background-size 
+- cover tells the browser to make sure the image always cover the entire containe, even if it has to stretch the image
+or cut a little bit off one of the edges.
+- contain tells the browser to always show the whole image even if that leaces a little space to the sides or bottom.
+ 
+*/
  
  body{
-     background: rgba(45, 120, 234, 1);
+     background: rgb(45, 120, 234, 1);
  }
 
 #title{
