@@ -1,0 +1,192 @@
+ /*
+ colors
+ - hex code: 0-9 and A-F.
+ eg. #a8f5e0
+ a8 - amount of red
+ f5 - amount of green
+ e0 - amount of blue
+ range from 00 (lowest) to ff (highest)
+ eg. solid blue: #0000ff
+ 00 - amount of red which is 0.
+ 00 - amount of green which is 0.
+ ff - amount of all blue.
+ eg. solid white: #ffffff
+ ff - all red
+ ff - all green
+ ff - all blue
+ eg. solid black: #000000
+ 00 - 0 red
+ 00 - 0 green
+ 00 - 0 blue
+
+ - rgb: 0 (minimum) - 255 (maximum)
+ eg. rgb(168, 245, 224)
+ 168 - amount of red
+ 245 - amount of green
+ 224 - amount of blue
+
+eg. solid blue: rgb(0, 0, 255)
+0 - amount of red
+0 - amount of green
+255 - amount of blue
+
+eg. solid white: rgb(0, 0, 0)
+0 - amount of red
+0 - amount of green
+0 - amount of blue
+
+eg. solid black: rgb (255, 255, 255)
+255 - amount of red
+255 - amount of green
+255 - amount of blue
+
+to use background image use this property:
+background
+- this can accept values from web url, local url, and color.
+- when you use background-color, it will only accept color. 
+If you try to use a url, it will NOT work, so better if you just use background property.
+
+to resize an image, you need to do the following:
+1. to test it out, you need to contain the image in a div tag.
+2. you need to specify its id to make it more specific.
+3. you need to declare the element's height and width.
+4. background-repeat - this means if the image that will placed in this element will repeat or not.
+5. background-size 
+- cover tells the browser to make sure the image always cover the entire containe, even if it has to stretch the image
+or cut a little bit off one of the edges.
+- contain tells the browser to always show the whole image even if that leaces a little space to the sides or bottom.
+ 
+to increase or decrease the color's opacity, you could use:
+rgba - wherein the 4th parameter ranges from 0 - 1, 0 - lighter 1 - original color
+this value will change the color indicated in the first 3 parameters.
+a - alpha (opacity or transparency)
+Note: you can also use percentage here from 0% to 100%.
+
+Units:
+- absolute (they are not affected by the things around them)
+    - cm
+    - mm
+    - inch
+    - pixels (px) 
+        - relative scale based on the device.
+        - dots per inch (dpi)
+- relative (depedent on something)
+    - percentage (%) 
+        - depedent on the parent, takes % of width.
+        - beneficial for responsive web design.
+
+    - vw/vh
+        - 1% of the total body width or body height.
+        - based on the viewport.
+
+text manipulation.
+    - text decoration
+        - the only thing that you can do here to is to change lining of the text.
+    - text transform
+        - it changes the case of the letters. (e.g. uppercase, capitalize, lowercase)
+
+font-size:
+    - font-size: 1.25em; make this 25% more than the standard font-size;
+    - font-size: 40px; make this the same.
+
+font-weight: bolding of the text.
+    - most fonts support 800 or 900 em 
+
+font-style:
+    - font-style: italic
+    - font-stlye: normal
+    - font-style: oblique - more italicize.
+
+font-families
+    - collection of fonts that have similar features.
+        - serif
+            - small lines on the end of letters.
+            - common in journals and research papers.
+            - quite difficult to read in the webpage though.
+            - ex. times new roman, georgia
+
+        - sans-serif
+            - letters does not have those small lines that can be seen on serif
+            - would look a lot cleaner and easier to read.
+            - ex. arial, calibri 
+
+        - monospace
+            - characters have the same width
+            - each characters takes same amount of space.
+            - ex. courier new
+
+    syntax:
+        - font-family: "Times New Roman", serif;
+            - if "Times New Roman" is available, use it.
+            - else fall back to serif fonts.
+
+external fonts
+        - use google fonts: https://fonts.google.com/
+        - steps: 
+            1. copy the link provided in the google fonts website.
+            2. paste it before the style tag located in the head tag.
+            3. use the font-family property to the selectors that you want to use this.
+
+*/
+ 
+ body{
+     background: linear-gradient(-140deg, rgb(45, 120, 234), rgba(45, 120, 234, 0.6));
+     font-family: 'Anek Latin', sans-serif;
+ }
+
+/* body{
+    background:rgb(5, 63, 198);
+} */
+
+#title{
+    color: rgb(10, 236, 70);
+}
+
+.subtitle{
+    color: rgb(47, 216, 92);
+}
+
+.google_link{
+    text-decoration: none;
+    /* text-decoration: underline;
+    text-decoration: line-through;
+    text-decoration: overline; */
+    
+    /* text-transform: capitalize; - capitalize all the first letter of each word.
+    text-transform: uppercase;
+    text-transform: lowercase; */
+}
+
+.paragraph1{
+    text-align: center;
+    text-align: justify;
+}
+
+
+
+#service-image{
+
+    height: 400px; 
+    width: 70%;
+    border: solid;
+
+    /* background: url("https://images.unsplash.com/photo-1495312040802-a929cd14a6ab?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1932&q=80");
+    background-repeat: no-repeat;
+    background-size: contain; */
+
+    /* background: linear-gradient(to right, rgb(0,255,0), rgba(0,0,255, 0.5)); */
+    /* background: linear-gradient(to bottom right, rgb(0,255,0), rgba(0,0,255, 0.5)); */
+    /* background: linear-gradient(-160deg, rgb(0,255,0), rgba(0,0,255, 0.5)); */
+    /* background: radial-gradient(red, rgba(0,0,255, 20%), rgba(0,255,0, 30%)); */
+    /* background:  radial-gradient(red 20%, blue 40%, green 70%); */
+    /* background:  radial-gradient(circle,red 20%, blue 40%, green 70%); */
+    background-size: cover
+
+    /* 
+    radial - circular
+        - for the shape, you can use two values (ellipse (default), circle)
+    linear - straight line
+        - when there is no direction mentioned, the default direction is from top to bottom.
+    */
+
+} 
